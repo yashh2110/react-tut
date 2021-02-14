@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+import FileClass from './FileClass';
+import FileOne from './FileOne';
+const styles = {
+    main:{
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        textAlign:"center",
+        width:"100%",
+        height:"100vh",
+    }
 }
-
+function App(){
+    return (
+        <div style={styles.main}>
+            {/* <FileOne name="yashh" age="10" />
+            <FileOne name="pig" />
+            <FileOne name="dog" />
+            <FileOne name="lion" /> */}
+            <FileClass />
+        </div>
+    )
+}
 export default App;
